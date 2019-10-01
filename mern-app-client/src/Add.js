@@ -4,34 +4,36 @@ import { Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
+export default class Add extends React.Component {
+  render() {
+    return (
+      <div>
+        <br />
+        <h1> Please provide a quote to add </h1>
+        <br />
+        <div className="Form">
+          <Form>
+            <Form.Group controlId="formBasicInput">
+              <Form.Label>Quote</Form.Label>
+              <Form.Control type="input" placeholder="Quote me baby" />
+              <Form.Text className="text-muted">
+                Share your wisdom with us
+              </Form.Text>
+            </Form.Group>
 
-export default function Add() {
-  return (
-    <div>
-      <h1> HELLO WELCOME TO ADD </h1>
-      <div className="Form">
-        <Form>
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-
-        <Form.Group controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <Form.Group controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+            <Form.Group controlId="formBasicInput">
+              <Form.Label>Author</Form.Label>
+              <Form.Control type="input" placeholder="It is I" />
+            </Form.Group>
+            <Form.Group controlId="formBasicCheckbox">
+              <Form.Check type="checkbox" label="Are you sure about this?" />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </div>
       </div>
-      
-    </div>
-  );
+    );
+  }
 }
