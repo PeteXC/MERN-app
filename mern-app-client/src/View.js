@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function View() {
-  return (
-    <div>
-      <h1> HELLO WELCOME TO HOME </h1>
-    </div>
-  );
+export default class View extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1> HELLO WELCOME TO VIEW </h1>
+      </div>
+    );
+  }
 }

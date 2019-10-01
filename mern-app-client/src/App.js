@@ -1,7 +1,7 @@
 // Module Imports
 import * as React from "react";
 import { Button, Nav, Navbar, Form, FormControl } from "react-bootstrap";
-import { Route, Switch, Link, Redirect, withRouter } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 // Component Imports
 import Home from "./Home";

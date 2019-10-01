@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  background-color: #535b6bc5;
+  position: absolute;
+  top: 0px; /* Header Height */
+  bottom: 0px; /* Footer Height */
+  width: 100%;
 }
 
 .App-logo {
@@ -25,4 +28,11 @@
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
